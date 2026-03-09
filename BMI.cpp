@@ -2,6 +2,14 @@
 using namespace std;
 
 float berat, tinggi;
+void input()
+{
+    cout << "---Selamat Datang Mahasiswa Kelas A 2025---";
+    cout << "Masukkan berat badan : ";
+    cin >> berat;
+    cout << "Masukkan tinggi badan : ";
+    cin >> tinggi;
+}
 
 float BMI(float b, float t)
 {
