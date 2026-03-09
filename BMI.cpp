@@ -1,13 +1,14 @@
 #include <iostream>
 using namespace std;
 
-float berat, tinggi;
+float berat, tinggi, status;
+
 void input()
 {
     cout << "---Selamat Datang Mahasiswa Kelas A 2025---" << endl;
-    cout << "Masukkan berat badan : ";
+    cout << "Masukkan berat badan (Kg) : ";
     cin >> berat;
-    cout << "Masukkan tinggi badan : ";
+    cout << "Masukkan tinggi badan (meter) : ";
     cin >> tinggi;
 }
 
@@ -32,10 +33,12 @@ void output()
 {
     cout << "---Hasil---" << endl;
     cout << "BMI Anda : " << BMI(berat, tinggi) << "" << endl;
+    cout << "Status : " << Status_badan(statusnya) << "" << endl;
 }
 
 int main()
 {
     input();
+    status = BMI(berat, tinggi);
     output();
 }
