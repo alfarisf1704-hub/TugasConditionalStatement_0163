@@ -33,12 +33,12 @@ void output()
 {
     cout << "---Hasil---" << endl;
     cout << "BMI Anda : " << BMI(berat, tinggi) << "" << endl;
-    cout << "Status : " << Status_badan(statusnya) << "" << endl;
+    cout << "Status : " << Status_badan(status) << "" << endl;
 }
 
 int main()
 {
     input();
-    status = BMI(berat, tinggi);
     output();
+    status = BMI(berat, tinggi);
 }
