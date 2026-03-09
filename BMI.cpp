@@ -31,4 +31,11 @@ string Status_badan(float bm)
 void output()
 {
     cout << "---Hasil---" << endl;
+    cout << "BMI Anda : " << BMI(berat, tinggi) << "" << endl;
+}
+
+int main()
+{
+    input();
+    output();
 }
