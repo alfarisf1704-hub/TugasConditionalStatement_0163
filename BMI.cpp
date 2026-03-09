@@ -5,7 +5,7 @@ float berat, tinggi, status;
 
 void input()
 {
-    cout << "---Selamat Datang Mahasiswa Kelas A 2025---" << endl;
+    cout << "--- Selamat Datang Mahasiswa Kelas A 2025 ---" << endl;
     cout << "Masukkan berat badan (Kg) : ";
     cin >> berat;
     cout << "Masukkan tinggi badan (meter) : ";
@@ -31,9 +31,9 @@ string Status_badan(float bm)
 
 void output()
 {
-    cout << "---Hasil---" << endl;
-    cout << "BMI Anda : " << BMI(berat, tinggi) << "" << endl;
-    cout << "Status : " << Status_badan(status) << "" << endl;
+    cout << "--- Hasil ---" << endl;
+    cout << "BMI Anda  : " << BMI(berat, tinggi) << "" << endl;
+    cout << "Status    : " << Status_badan(status) << "" << endl;
 }
 
 int main()
