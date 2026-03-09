@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-float berat, tinggi, status;
+float berat, tinggi;
 
 void input()
 {
@@ -17,28 +17,23 @@ float BMI(float b, float t)
     return b / (t * t);
 }
 
-string Status_badan(float bm)
+string Status_badan(float r)
 {
-    if (bm < 18.5)
+    if (r < 18.5)
         return "Berat Badan Kurang";
-    if (bm < 25)
+    if (r < 25)
         return "Berat Badan Normal";
-    if (bm < 30)
+    if (r < 30)
         return "Berat Badan Kelebihan";
     else
         return "Obesitas";
 }
 
-void output()
-{
-    cout << "--- Hasil ---" << endl;
-    cout << "BMI Anda  : " << BMI(berat, tinggi) << "" << endl;
-    cout << "Status    : " << Status_badan(status) << "" << endl;
-}
-
 int main()
 {
     input();
-    output();
-    status = BMI(berat, tinggi);
+    cout << endl;
+    cout << "--- Hasil ---" << endl;
+    cout << "BMI Anda  : " << BMI(berat, tinggi) << endl;
+    cout << "Status    : " << Status_badan(BMI(berat, tinggi)) << endl;
 }
