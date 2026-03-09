@@ -4,7 +4,7 @@ using namespace std;
 float berat, tinggi;
 void input()
 {
-    cout << "---Selamat Datang Mahasiswa Kelas A 2025---";
+    cout << "---Selamat Datang Mahasiswa Kelas A 2025---" << endl;
     cout << "Masukkan berat badan : ";
     cin >> berat;
     cout << "Masukkan tinggi badan : ";
@@ -26,4 +26,9 @@ string Status_badan(float bm)
         return "Berat Badan Kelebihan";
     else
         return "Obesitas";
+}
+
+void output()
+{
+    cout << "---Hasil---" << endl;
 }
