@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+float berat, tinggi;
+
 float BMI(float b, float t)
 {
     return b / (t * t);
